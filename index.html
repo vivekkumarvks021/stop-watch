@@ -1,30 +1,48 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8" />
+
+    <!-- Responsive design for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+
+    <title>Stopwatch</title>
   </head>
+
   <body>
+    <!-- Main container centered vertically and horizontally -->
     <div
       class="container vh-100 d-flex justify-content-center align-items-center"
     >
+      <!-- Stopwatch card -->
       <div class="card shadow-lg stopwatch-container">
+        <!-- Timer display section -->
         <div class="timer">
           <h2 id="time">00:00:00</h2>
         </div>
+
+        <!-- Action buttons -->
         <div class="action">
           <button id="start" class="btn btn-primary">Start</button>
+
           <button id="stop" class="btn btn-secondary">Stop</button>
+
           <button id="reset" class="btn btn-danger">Reset</button>
         </div>
       </div>
     </div>
+
+    <!-- JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
